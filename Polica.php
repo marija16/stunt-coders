@@ -9,10 +9,11 @@
 class Polica
 {
     public $nizKnjiga;
+    public $kapacitet = 20;
 
     public function __construct()
     {
-        $this->nizKnjiga = array();
+        $this->nizKnjiga = array($this->kapacitet);
     }
 
     //add to array
