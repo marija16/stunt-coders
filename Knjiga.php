@@ -9,10 +9,12 @@
 class Knjiga
 {
     public $nazivKnjige;
+    public $autor;
 
-    public function __construct($nazivKnjige)
+    public function __construct($nazivKnjige, $autor)
     {
         $this->nazivKnjige = $nazivKnjige;
+        $this->autor = $autor;
     }
 
     public function getNazivKnjige()
@@ -25,5 +27,13 @@ class Knjiga
         $this->nazivKnjige = $nazivKnjige;
     }
 
+    public function getAutor()
+    {
+        return $this->autor;
+    }
 
+    public function setAutor($autor)
+    {
+        $this->autor = $autor;
+    }
 }
